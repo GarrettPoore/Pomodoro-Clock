@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pomodoro Clock</title>
+
+    <meta name="description" content="A pomodoro clock to help you be more productive.">
+    <meta name="author" content="Garrett Poore">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="scripts.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+  </head>
+
+  <body>
+    <h1>Pomodoro Clock</h1>
+    <div id="inputs">
+      <div id="break_input">
+        <button type="button" id="decrease_break_length">-</button>
+        Break Length: <input type="text" id="break_length">
+        <button type="button" id="increase_break_length">+</button><br>
+      </div>
+      <div id="session_input">
+        <button type="button" id="decrease_session_length">-</button>
+        Session Length: <input type="text" id="session_length">
+        <button type="button" id="increase_session_length">+</button>
+      </div>
+    </div>
+    <div id="clock_area">
+      <button id="clock">
+        THIS IS A CLOCK
+      </button>
+    </div>
+  </body>
+</html>
