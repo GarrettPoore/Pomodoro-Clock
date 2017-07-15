@@ -23,9 +23,8 @@ $(document).ready(function() {
         //Validation between 1 and 999
         if (val === 0) {
           val = 1;
-        } else if (val/1000 > 1) {
-          val = break_time;
-          alert("Please enter a number between 1 and 999");
+        } else if (val/1000 >= 1) {
+          val = 999;
         }
         updateBreakTime(val);
       }
@@ -43,9 +42,8 @@ $(document).ready(function() {
         //Validation between 1 and 999
         if (val === 0) {
           val = 1;
-        } else if (val/1000 > 1) {
-          val = work_time;
-          alert("Please enter a number between 1 and 999");
+        } else if (val/1000 >= 1) {
+          val = 999;
         }
         updateWorkTime(val);
       }
@@ -58,11 +56,15 @@ $(document).ready(function() {
     var val = event.target.value;
     if (!running) {
       if (val == "work") {
-        updateWorkTime(work_time + 1);
-        $("#work_length").val(work_time);
+        if (work_time < 999) {
+          updateWorkTime(work_time + 1);
+          $("#work_length").val(work_time);
+        }
       } else {
-        updateBreakTime(break_time + 1);
-        $("#break_length").val(break_time);
+        if (break_time < 999) {
+          updateBreakTime(break_time + 1);
+          $("#break_length").val(break_time);
+        }
       }
     }
   });
