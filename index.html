@@ -11,6 +11,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="scripts.js"></script>
+    <script src="clock.js"></script>
     <link rel="stylesheet" href="styles.css">
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
   </head>
@@ -19,20 +20,18 @@
     <h1>Pomodoro Clock</h1>
     <div id="inputs">
       <div id="break_input">
-        <button type="button" id="decrease_break_length">-</button>
+        <button type="button" class="decrease_time" value="break">-</button>
         Break Length: <input type="text" id="break_length">
-        <button type="button" id="increase_break_length">+</button><br>
+        <button type="button" class="increase_time" value="break">+</button><br>
       </div>
       <div id="session_input">
-        <button type="button" id="decrease_session_length">-</button>
-        Session Length: <input type="text" id="session_length">
-        <button type="button" id="increase_session_length">+</button>
+        <button type="button" class="decrease_time" value="work">-</button>
+        Work Length: <input type="text" id="work_length">
+        <button type="button" class="increase_time" value="work">+</button>
       </div>
     </div>
     <div id="clock_area">
-      <button id="clock">
-        THIS IS A CLOCK
-      </button>
+      <button id="clock"></button>
     </div>
   </body>
 </html>
