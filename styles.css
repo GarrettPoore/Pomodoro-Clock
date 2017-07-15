@@ -1,3 +1,85 @@
 body {
+  color: white;
   text-align: center;
+  background: rgb(68, 68, 68);
+}
+
+input[type=text] {
+  color: white;
+  background-color: rgba(0, 0, 0, 0); /*Transparent*/
+  border: none;
+  outline: none;
+  font-size: 16pt;
+  width: 2em;
+  text-align: center;
+}
+
+button {
+  color: white;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  cursor: pointer;
+  outline: none;
+  font-size: 16pt;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: rgba(50, 50, 50, 0.5);
+  border-radius: 5px;
+  transition-duration: 0.5s;
+}
+
+button:active {
+  background-color: rgba(50, 50, 50, 0.5);
+  border-radius: 100%;
+  transition-duration: 0.1s;
+}
+
+#clock_area {
+  font-size: 16pt;
+  border-style: solid;
+  border-width: medium;
+  border-radius: 100%;
+  border-color: white;
+  width: 15em;
+  height: 15em;
+  margin: auto;
+}
+
+#clock {
+  color: white;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  cursor: pointer;
+  outline: none;
+  border-radius: 100%;
+  width: 15em;
+  height: 15em;
+  /*margin-top: -50%; //If I need to throw it into the middle of the circle
+  position: relative;*/
+}
+
+#inputs {
+  width: 25%;
+  min-height: 12em;
+  margin: auto;
+  margin-top: 3em;
+  /*background: cyan;*/
+}
+
+#break_input {
+  float: left;
+  /*background: red;*/
+}
+
+#session_input {
+  float: right;
+  /*background: green;*/
+}
+
+#clock_area {
+  /*background: blue;*/
 }
