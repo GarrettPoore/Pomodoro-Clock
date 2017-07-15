@@ -1,4 +1,4 @@
-var work_time = 60;
+var work_time = 25;
 var break_time = 5;
 var running = false;
 var mode = "work"; //work or break
