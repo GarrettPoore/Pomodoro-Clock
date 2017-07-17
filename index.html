@@ -13,26 +13,33 @@
     <script src="scripts.js"></script>
     <script src="clock.js"></script>
     <link rel="stylesheet" href="styles.css">
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
   </head>
 
   <body>
     <h1>Pomodoro Clock</h1>
+
+    <!-- Inputs -->
     <div id="inputs">
-      <div id="break_input">
+      <div id="input_block">
         <h4>Break Length</h4>
         <button type="button" class="decrease_time" value="break">-</button>
         <input type="text" id="break_length">
         <button type="button" class="increase_time" value="break">+</button><br>
       </div>
-      <div id="session_input">
+      <div class="input_spacer"></div>
+      <div id="input_block">
         <h4>Work Length</h4>
         <button type="button" class="decrease_time" value="work">-</button>
         <input type="text" id="work_length">
         <button type="button" class="increase_time" value="work">+</button>
       </div>
     </div>
+
+    <!-- Clock -->
     <div id="clock_area">
+      <div id="clock_background"></div>
+      <div id="mode">Work</div>
       <button id="clock"></button>
     </div>
   </body>
